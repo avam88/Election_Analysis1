@@ -1,4 +1,3 @@
-# Election_Analysis1
 # US Congressional Colorado Precinct Election Audit & Analysis
 --------------------------------------------------------------
 ### The Board of Elections for Colorado is concerned with certifying and auditing the results from the most recent congressional election. A successful audit will prove that our tabulating methodology will return the same election values and statistics consistently and most importantly, the results can be reproduced by a third party. The methodology, applications, functions and logic used to produce the results are accurate and align with industry standards. The summary and anlysis will provide transparency in our process and provide accountability for our methods in measure with the political significance of ceritfying our results.
@@ -18,7 +17,7 @@ County Votes:
 - Denver: 82.8% (306,055)
 - Arapahoe: 6.7% (24,801)
 -------------------------
-Largest County Turnout: Denver
+- Largest County Turnout: Denver
 -------------------------
 - Charles Casper Stockham: 23.0% (85,213)
 - Diana DeGette: 73.8% (272,892)
