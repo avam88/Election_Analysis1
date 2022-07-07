@@ -38,17 +38,17 @@ Our first order of operations is to sort through the rows and identify each row 
 
 Once our baseline numbers are tabulated (total votes, votes per candidate, votes per county), we can use the variables holding these values to perform mathematical functions. From the total vote counts, and vote counts by candidate, we can find percentage of vote by candidate by dividing the later by the former and multiplying by 100. The same mathematical algorithm can be used with the variables for total vote and county vote to find vote participation by county.
 
-image of mathematical funcitons
+![Screen Shot 2022-07-04 at 9 54 39 PM](https://user-images.githubusercontent.com/107326987/177668792-f24cba9b-5ca6-41c9-8c5b-a196eb5fdb95.png)
 
 Once total votes, total votes per candidate and percentage of votes is returned, we can run a simple conditional statement to determine which candidate has the winning amount of votes and percentage of votes as seen below. This code uses conditional statements to create paramters that if met, logically return our winning candidate. 
 
-image of conditional to determine winning candidate
+![Screen Shot 2022-07-04 at 9 54 55 PM](https://user-images.githubusercontent.com/107326987/177668845-ed670823-49ce-4aa1-a7bd-1e4e9b42a3b2.png)
 
 ## Election Audit Challenges and Recommendations
 ### Model for Future Election Analysis & Challenges with Current Script
 To reduce institutional redundancy, with a few minor modifications to the script, the functionality could be expanded to audit future election results. The first limitation to consider is the code language used to loop through our list of dictionaries - these opening lines of code require a specific sequential organization of the data - the for loops call upon the values in the dictionary through indices essentially requiring Ballot ID to always be located in column 1, County name to always be located in column 2 etc. The script would be much more versatile if instead the first for loop identified the "key" terms in the header row (column header values) to find where specific lists of data are located. In this way time and energy would not be spent reformatting raw data files on the front end and the script could locate and iterate through the data as necessary.
 
-image of for loop calling on column header values by index
+![Screen Shot 2022-07-04 at 10 08 06 PM](https://user-images.githubusercontent.com/107326987/177668868-72c9554c-3e33-42ad-a104-5983ca4e494c.png)
 
 The second limitation to consider is the code's prescriptive use of language -  currently it can only reasonably be used for elections where results are tabulated on the county level. If the Colorado and/or Congressional Board wanted to audt and certify results on elections based on different geographies (zipcodes, cities) the output format would hinder readability. With minor changes to the language used in declaring variables and output formatting, the script could become more adaptable and functional for any election analysis in the future.
 
